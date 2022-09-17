@@ -29,7 +29,7 @@ const fileOpen = file => {
       let text = reader.result;
       if (file.name.toLowerCase().endsWith(".json")) {
         // Ignore BOM
-        if (text.charCodeAt(0) === 0xFEFF) text = text.substr(1);
+        if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
         if (!isJSON(text)) return resolve();
 
         let jsonFile = JSON.parse(text);
@@ -152,11 +152,11 @@ const convertSessionManager = file => {
   session.windows = {};
   session.windowsNumber = 0;
   session.tabsNumber = 0;
-  session.name = line[1].substr(5);
-  session.date = moment(parseInt(line[2].substr(10))).valueOf();
+  session.name = line[1].slice(5);
+  session.date = moment(parseInt(line[2].slice(10))).valueOf();
   session.lastEditedTime = Date.now();
   session.tag = [];
-  session.sessionStartTime = parseInt(line[2].substr(10));
+  session.sessionStartTime = parseInt(line[2].slice(10));
   session.id = uuidv4();
 
   if (!isJSON(line[4])) return;
@@ -207,16 +207,30 @@ const convertMozLz4Sessionstore = async file => {
     let index = 0;
     for (const tab of mozSession.windows[win].tabs) {
       const entryIndex = tab.index - 1;
-      session.windows[win][index] = {
-        id: index,
-        index: index,
-        windowId: parseInt(win),
-        lastAccessed: tab.lastAccessed,
-        url: tab.entries[entryIndex].url,
-        title: tab.entries[entryIndex].title,
-        favIconUrl: tab.image,
-        discarded: true,
-      };
+      if (tab.entries[entryIndex]) {
+        session.windows[win][index] = {
+          id: index,
+          index: index,
+          windowId: parseInt(win, 10),
+          lastAccessed: tab.lastAccessed,
+          url: tab.entries[entryIndex].url,
+          title: tab.entries[entryIndex].title,
+          favIconUrl: tab.image,
+          discarded: true,
+        };
+      } else {
+        // User typed value into URL bar but page was not loaded
+        session.windows[win][index] = {
+          id: index,
+          index: index,
+          windowId: parseInt(win, 10),
+          lastAccessed: tab.lastAccessed,
+          url: 'about:blank#' + tab.userTypedValue,
+          title: 'New Tab',
+          favIconUrl: tab.image,
+          discarded: true,
+        };
+      }
       index++;
     }
     session.tabsNumber += index;

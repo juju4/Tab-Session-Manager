@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Создать копию сессии"
   },
+  "registerTrackingLabel": {
+    "message": "Отслеживать изменения окон"
+  },
+  "removeTrackingLabel": {
+    "message": "Прекратить отслеживать"
+  },
   "registerStartupLabel": {
     "message": "Открывать при запуске"
   },
@@ -285,10 +291,10 @@
     "message": "Иконка вкладки при фоновой загрузке не отображается."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Восстановить расположение окон"
+    "message": "Восстановить расположение окна"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Восстановить размеры и расположение окон при открытии сессии."
+    "message": "Восстановить размер и расположение окна при открытии сессии."
   },
   "startupLabel": {
     "message": "При запуске"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Ничего не делать"
+  },
+  "trackingSessionLabel": {
+    "message": "Сессия отслеживания"
+  },
+  "trackingLabel": {
+    "message": "Отслеживание"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Отслеживать открывающиеся окна"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "Когда во время работы сессии отслеживания открывается новое окно, отслеживать его тоже."
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"

@@ -242,6 +242,18 @@ export default [
     ]
   },
   {
+    category: "trackingSessionLabel",
+    elements: [
+      {
+        id: "shouldTrackNewWindow",
+        title: "shouldTrackNewWindowLabel",
+        captions: ["shouldTrackNewWindowCaptionLabel"],
+        type: "checkbox",
+        default: true,
+      }
+    ]
+  },
+  {
     category: "backupLabel",
     elements: [
       {

@@ -4,6 +4,7 @@ import log from "loglevel";
 import Sessions from "./sessions.js";
 import { updateSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
+import { endTrackingBySessionId } from "./track.js";
 
 const logDir = "background/tag";
 
@@ -42,7 +43,7 @@ export const getValidatedTag = (tag, session) => {
 
 export async function addTag(id, tag) {
   log.log(logDir, "addTag()", id, tag);
-  let session = await Sessions.get(id).catch(() => {});
+  let session = await Sessions.get(id).catch(() => { });
   if (!session) return;
 
   const validatedTag = getValidatedTag(tag, session);
@@ -54,7 +55,7 @@ export async function addTag(id, tag) {
 
 export async function removeTag(id, tag) {
   log.log(logDir, "removeTag()", id, tag);
-  let session = await Sessions.get(id).catch(() => {});
+  let session = await Sessions.get(id).catch(() => { });
   if (session == undefined) return;
 
   const isNotEqual = value => {
@@ -67,6 +68,7 @@ export async function removeTag(id, tag) {
     return element != tag;
   });
 
+  if (tag === "_tracking") endTrackingBySessionId(id);
   return await updateSession(session);
 }
 
@@ -80,7 +82,7 @@ export async function getSessionsByTag(tag, needKeys = null) {
     return element.tag.includes(tag);
   };
 
-  let sessions = await Sessions.getAll(needKeys).catch(() => {});
+  let sessions = await Sessions.getAll(needKeys).catch(() => { });
   sessions = sessions.filter(isIncludesTag);
   sessions.sort(newestSort);
 
@@ -93,7 +95,7 @@ export async function applyDeviceName() {
   if (!(shouldSaveDeviceName && deviceName)) return;
   log.log(logDir, "applyDeviceName()", deviceName);
 
-  const sessions = await Sessions.getAll().catch(() => {});
+  const sessions = await Sessions.getAll().catch(() => { });
   for (let session of sessions) {
     const validatedTag = getValidatedTag(deviceName, session);
     if (validatedTag === "") continue;

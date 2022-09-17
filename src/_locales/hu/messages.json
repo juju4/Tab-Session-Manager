@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Másolatot készítése a munkamenetről"
   },
+  "registerTrackingLabel": {
+    "message": "Ablak változások nyomon követése"
+  },
+  "removeTrackingLabel": {
+    "message": "Követés eltávolítása"
+  },
   "registerStartupLabel": {
     "message": "Automatikus indításra regisztrálás"
   },
@@ -285,10 +291,10 @@
     "message": "Lusta betöltésű lap faviconjának megjelenítésének mellőzése."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Ablakok pozícióinak visszaállítása"
+    "message": "Ablak pozíciójának visszaállítása"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Ablakok pozícióinak és méreteinek visszaállítása munkamenet megnyitáskor."
+    "message": "Ablak pozíciójának és méretének visszaállítása munkamenet megnyitáskor."
   },
   "startupLabel": {
     "message": "Automatikus indítás"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Ne tegyen semmit"
+  },
+  "trackingSessionLabel": {
+    "message": "Követés munkamenet"
+  },
+  "trackingLabel": {
+    "message": "Követés"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Újonnan megnyitott ablakok követése"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "Ha új ablak nyílt a követés munkamenetben, kövessük azt is."
   },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"

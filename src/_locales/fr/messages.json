@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Faire une copie de la session"
   },
+  "registerTrackingLabel": {
+    "message": "Surveiller les changements de fenêtre"
+  },
+  "removeTrackingLabel": {
+    "message": "Arrêter la surveillance"
+  },
   "registerStartupLabel": {
     "message": "Ajouter au démarrage"
   },
@@ -234,13 +240,13 @@
     "message": "Sauvegarde automatique – Périodique"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Fenêtre fermée"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Navigateur fermé"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Régulièrement"
   },
   "settingsLabel": {
     "message": "Paramètres"
@@ -288,7 +294,7 @@
     "message": "Rétablir la position de la fenêtre"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Rétablir la position et la taille de la fenêtre à l'ouverture de la session."
+    "message": "Rétablir la position et la taille de la fenêtre à l’ouverture de la session."
   },
   "startupLabel": {
     "message": "Démarrage"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Ne rien faire"
+  },
+  "trackingSessionLabel": {
+    "message": "Surveillance de la session"
+  },
+  "trackingLabel": {
+    "message": "Surveillée"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Surveiller les nouvelles fenêtres"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "Lorsqu’une nouvelle fenêtre est ouverte dans une session surveillée, l’inclure dans la surveillance."
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
@@ -504,7 +522,7 @@
     "message": "Synchronisation terminée."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Nécessite de se connecter pour la synchronisation infonuagique."
   },
   "signInLabel": {
     "message": "Se connecter"
@@ -627,13 +645,13 @@
     "message": "Importer des sessions"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Charger des sessions enregistrées sur l'ordinateur et les ajouter à la liste des sessions."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Fichiers pris en charge :"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Comment importer des sessions d'autres extensions"
   },
   "importButtonLabel": {
     "message": "Parcourir..."
@@ -693,7 +711,7 @@
     "message": "Ce raccourci ne peut pas être utilisé"
   },
   "openPopupDescription": {
-    "message": "Ouvrir la barre d’outil surgissante"
+    "message": "Ouvrir la fenêtre surgissante de la barre d'outils"
   },
   "saveCurrentWindowDescription": {
     "message": "Enregistrer la session (uniquement la fenêtre active)"

@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "세션의 복사본 만들기"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "홈페이지로 등록"
   },
@@ -285,10 +291,10 @@
     "message": "느리게 여는 탭의 파비콘은 보여지지 않습니다."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "창 위치 복원하기"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "세션을 열 때 창 위치와 크기를 복원합니다."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "시작"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "비활성화"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "주기적으로 세션 자동 저장"

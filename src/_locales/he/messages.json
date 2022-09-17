@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "צור עותק מהפעילות"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "רשום להפעלה"
   },
@@ -285,10 +291,10 @@
     "message": "ה-favicon של הכרטיסיה הנטענת באופן עצל אינה מוצגת."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "שחזר את מיקום חלונות"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "שחזר את מיקום וגודל החלונות בעת פתיחת הפעילות."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "הפעלה"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "אל תעשה כלום"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "שמור את הפעילות באופן קבוע"

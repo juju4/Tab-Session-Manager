@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Oturumun kopyasını oluştur"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Başlangıç için kaydolun"
   },
@@ -285,10 +291,10 @@
     "message": "Geç yükleme sekmesinin favicon'u görüntülenmez."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Pencere konumunu geri yükle"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Oturumu açarken pencerenin konumunu ve boyutunu geri yükleyin."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Başlangıç"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Hiç bir şey yapma"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "Oturumu düzenli olarak kaydet"

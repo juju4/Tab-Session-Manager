@@ -120,7 +120,7 @@
     "message": "Schlagwort entfernen"
   },
   "inputTagLabel": {
-    "message": "Den Tag-Namen eingeben"
+    "message": "Tag-Namen eingeben"
   },
   "detailLabel": {
     "message": "Details"
@@ -199,6 +199,12 @@
   },
   "makeCopySessionLabel": {
     "message": "Sitzung kopieren"
+  },
+  "registerTrackingLabel": {
+    "message": "Änderungen des Fensters verfolgen"
+  },
+  "removeTrackingLabel": {
+    "message": "Tracking löschen"
   },
   "registerStartupLabel": {
     "message": "Zum Start registrieren"
@@ -285,10 +291,10 @@
     "message": "Das Favicon vom verzögert ladenden Tab wird nicht angezeigt."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Fensterpositionen wiederherstellen"
+    "message": "Fensterposition wiederherstellen"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Stelle Fensterposition und -größe wieder her beim Öffnen einer Sitzung."
+    "message": "Position und Größe des Fensters beim Öffnen der Sitzung wiederherstellen."
   },
   "startupLabel": {
     "message": "Autostart"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Nichts machen"
+  },
+  "trackingSessionLabel": {
+    "message": "Verfolgungs-Sitzung"
+  },
+  "trackingLabel": {
+    "message": "Verfolgung"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Neu geöffnete Fenster verfolgen"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "Neues Fenster zur Verfolgung hinzufügen, falls es innerhalb einer Verfolgungs-Sitzung geöffnet wird."
   },
   "ifAutoSaveLabel": {
     "message": "Sitzung regelmäßig sichern"
@@ -408,7 +426,7 @@
     "message": "Gerätename in Sitzung speichern"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Fügen Sie den Gerätenamen als Tag hinzu, wenn Sie eine Sitzung speichern. Bei der Cloud-Synchronisierung können Sie ihn von Sitzungen auf anderen Geräten unterscheiden."
+    "message": "Fügen Sie den Gerätenamen als Tag hinzu, wenn Sie eine Sitzung speichern. Bei der Cloud-Synchronisierung können Sie es von Sitzungen auf anderen Geräten unterscheiden."
   },
   "deviceNameLabel": {
     "message": "Gerätename"
@@ -504,7 +522,7 @@
     "message": "Synchronisierung abgeschlossen."
   },
   "signInRequiredLabel": {
-    "message": "Einloggen nötig für Cloud-Synchronisierung."
+    "message": "Erfordert die Anmeldung für die Cloud-Synchronisierung."
   },
   "signInLabel": {
     "message": "Anmelden"
@@ -606,13 +624,13 @@
     "message": "Einstellungen Exportieren"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Einstellungen als json-Datei auf dem Computer Speichern."
+    "message": "Einstellungen als json-Datei auf dem Computer speichern."
   },
   "importSettingsLabel": {
     "message": "Einstellungen Importieren"
   },
   "importSettingsCaptionLabel": {
-    "message": "Einstellungsdatei vom Computer Laden."
+    "message": "Laden Sie die auf dem Computer gespeicherte Einstellungsdatei."
   },
   "resetSettingsLabel": {
     "message": "Einstellungen zurücksetzen"
@@ -627,7 +645,7 @@
     "message": "Sitzungen importieren"
   },
   "importCaptionLabel": {
-    "message": "Lade Sitzungen vom Computer und füge sie zur Session-Liste."
+    "message": "Laden Sie auf dem Computer gespeicherte Sitzungen und fügen Sie diese der Sitzungsliste hinzu."
   },
   "importCaptionLabel2": {
     "message": "Unterstützte Dateitypen:"
@@ -735,13 +753,13 @@
     "message": "Erweiterungs Seite"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox Addons"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge Addons"
   },
   "privacyPolicyLabel": {
     "message": "Datenschutzrichtlinie"

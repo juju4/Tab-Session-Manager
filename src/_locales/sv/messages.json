@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Gör en kopia av sessionen"
   },
+  "registerTrackingLabel": {
+    "message": "Spåra fönsterändringar"
+  },
+  "removeTrackingLabel": {
+    "message": "Ta bort spårning"
+  },
   "registerStartupLabel": {
     "message": "Starta vid uppstart"
   },
@@ -285,10 +291,10 @@
     "message": "Favoritikonen i fliken som laddar efterhand visas inte."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Återställ fönsterplaceringar"
+    "message": "Återställ fönstrets position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
+    "message": "Återställ fönstrets position och storlek när du öppnar sessionen."
   },
   "startupLabel": {
     "message": "Uppstart"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Gör ingenting"
+  },
+  "trackingSessionLabel": {
+    "message": "Spårningssession"
+  },
+  "trackingLabel": {
+    "message": "Spårning"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Spåra nyöppnade fönster"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "När ett nytt fönster öppnas inom en spårningssession, inkludera det i spårningen."
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"

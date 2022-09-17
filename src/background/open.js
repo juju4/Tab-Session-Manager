@@ -4,6 +4,7 @@ import log from "loglevel";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
+import { isTrackingSession, startTracking } from "./track.js";
 
 const logDir = "background/open";
 
@@ -43,8 +44,23 @@ export async function openSession(session, property = "openInNewWindow") {
             break;
         }
       }
-
-      const currentWindow = await browser.windows.create(createData);
+      let currentWindow
+      try {
+        currentWindow = await browser.windows.create(createData);
+      } catch (e) {
+        /**
+         * @see https://source.chromium.org/chromium/chromium/src/+/d51682b36adc22496f45a8111358a8bb30914534
+         * @see https://github.com/sienori/Tab-Session-Manager/issues/1057
+         * try to open a window in "safe" mode
+         */
+        currentWindow = await browser.windows.create({
+          ...createData,
+          width: 800,
+          height: 600,
+          top: 0,
+          left: 0,
+        });
+      }
 
       if (isSetPosition && session.windowsInfo[win].state == "maximized") {
         browser.windows.update(currentWindow.id, { state: "maximized" });
@@ -189,6 +205,11 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
     await Promise.all(openedTabs);
     setWindowTitle(session, win, currentWindow);
   }
+
+  if (isTrackingSession(session.tag)) {
+    await Promise.all(openedTabs);
+    startTracking(session.id, win, currentWindow.id);
+  }
 }
 
 let tabList = {};
@@ -247,7 +268,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
     }
 
     //Reader mode
-    if (tab.url.substr(0, 17) == "about:reader?url=") {
+    if (tab.url.startsWith("about:reader?url=")) {
       if (getSettings("ifLazyLoading")) {
         createOption.url = returnReplaceURL(
           "redirect",
@@ -257,7 +278,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
         );
       } else {
         if (isEnabledOpenInReaderMode) createOption.openInReaderMode = true;
-        createOption.url = decodeURIComponent(tab.url.substr(17));
+        createOption.url = decodeURIComponent(tab.url.slice(17));
       }
     }
 

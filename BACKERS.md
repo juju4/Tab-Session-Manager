@@ -84,7 +84,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Bill Nichols
 - baswein
 - Brooke Austin
-- Olzhas Suleimen
+- [Olzhas Suleimen](https://github.com/ykmnkmi)
 - Ymje Sköld
 - Michael
 - Ruchira
@@ -96,4 +96,37 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Deckard
 - Susannah Lai
 - Hassan Williamson
-- Kamran Razvan
+- Kamran Razvan ([Click & Pledge](https://clickandpledge.com/))
+- Denikos
+- Claudio Salvio
+- Mitrakov Artem
+- Sam McCann
+- Eric Beasley
+- Vladimir Chupin
+- Butch Deadlift
+- SpaceAlpaca
+- Kimberly Frick Arndts
+- Drew Neilson
+- 魁獵首
+- Paul Cristian Sarbu
+- Alexander Jahn
+- Reed
+- Tom Yates
+- سليمان العقل
+- Cani Glauss
+- Lee Sweet
+- SrPersimmon
+- Daniel
+- A TA
+- bob sauerbrey
+- David Nicholson
+- JJ
+- David Hajek ([@hdavid4444](https://mobile.twitter.com/hdavid4444))
+- Jeffrey Galli
+- Mariano Absatz
+- David Hajek
+- Steve Walsh
+- Richard McClintock, Sr.
+- Chris Bolton 
+- Haviland Wright
+- empty_child

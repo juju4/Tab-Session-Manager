@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Tee kopio istunnosta"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Merkitse käynnistykseen"
   },
@@ -285,10 +291,10 @@
     "message": "Laiskasti ladattavat välilehden faviconia ei näytetä."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Palauta ikkunoiden sijainnit"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Palauta ikkunoiden sijainnit ja koot istunto avattaessa."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Käynnistys"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Älä tee mitään"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "Tallenna istunto säännöllisesti"

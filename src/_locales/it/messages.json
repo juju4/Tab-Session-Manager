@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Fai una copia della sessione"
   },
+  "registerTrackingLabel": {
+    "message": "Monitora i cambiamenti della finestra"
+  },
+  "removeTrackingLabel": {
+    "message": "Elimina monitoraggio"
+  },
   "registerStartupLabel": {
     "message": "Registra per l'avvio"
   },
@@ -234,13 +240,13 @@
     "message": "Salvataggio automatico - Progammato"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Finestra chiusa"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Uscito dal browser"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Periodicamente"
   },
   "settingsLabel": {
     "message": "Impostazioni"
@@ -285,10 +291,10 @@
     "message": "L'icona delle schede con caricamento posticipato non verrà mostrata."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Ripristina posizione delle finestre"
+    "message": "Ripristina posizione finestra"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Ripristina la posizione e la dimensione delle finestre durante l'apertura di una sessione."
+    "message": "Ripristina la posizione e la dimensione della finestra durante l'apertura di una sessione."
   },
   "startupLabel": {
     "message": "Avvio"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Non fare nulla"
+  },
+  "trackingSessionLabel": {
+    "message": "Monitoraggio sessione"
+  },
+  "trackingLabel": {
+    "message": "Monitoraggio"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Monitora le nuove finestre aperte"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "Quando una nuova finestra viene aperta all'interno di una sessione monitorata, includila nel monitoraggio."
   },
   "ifAutoSaveLabel": {
     "message": "Salva la sessione regolarmente"
